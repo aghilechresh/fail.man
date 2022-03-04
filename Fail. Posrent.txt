@@ -70,7 +70,6 @@ DOMAIN-SUFFIX,geosite.category.ads.all,REJECT
 DOMAIN-SUFFIX,appcenter.ms,REJECT
 DOMAIN-SUFFIX,app.measurement.com,REJECT
 
-
 [Host]
 1006-shadow.igamecj.com = 43.130.67.186
 2005-shadow.igamecj.com = 51.143.238.235
@@ -238,7 +237,7 @@ logspot.l.googleusercontent.com = 119.28.114.175
 185.151.204.13 = pmsc.pubgmobile.com = 
 185.151.204.13 = clubopen.pubgmobile.com = 
 185.151.204.13 = file-pmco.pubgmobile.com = 
-37.152.182.112 = www.pubgmobile.com
+www.pubgmobile.com = 61.91.161.217
 m.facebook.com = 31.13.77.37
 www.facebook.com = 157.240.11.35
 Fbcdn.net = 157.240.0.17
