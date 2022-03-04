@@ -16,83 +16,15 @@ Romania = Shadowsocks, 185.225.19.64,50003,aes-256-gcm, 8460400130, http://conne
 Proxy = select, TurkeyGaming, TurkeyGamin, Germany, German, Netherlands, Romania
 
 [Rule]
-IP-CIDR,192.168.0.0/16, Proxy 
-IP-CIDR,10.0.0.0/8, Proxy 
-IP-CIDR,172.16.0.0/12, Proxy 
-IP-CIDR,127.0.0.1/8, Proxy   
-IP-CIDR,100.64.0.0/10, Proxy   
-IP-CIDR6,::1/128, Proxy   
-IP-CIDR6,fc00::/7, Proxy   
-IP-CIDR6,fe80::/10, Proxy   
-IP-CIDR6,fd00::/8, Proxy   
-
-DOMAIN,google.com, Proxy   
-DOMAIN,gstatic.com, Proxy   
-DOMAIN,google.com.hk, Proxy   
-DOMAIN,gmail.com, Proxy   
-DOMAIN,googledrive.com, Proxy   
-DOMAIN,googleusercontent.com, Proxy   
-DOMAIN,android.com, Proxy   
-DOMAIN,googleapis.com, Proxy   
-DOMAIN,googlevideo.com, Proxy   
-DOMAIN,googlesyndication.com, Proxy   
-DOMAIN,wikipedia.org, Proxy   
-DOMAIN,wikimedia.org, Proxy   
-DOMAIN,youtube.com, Proxy   
-DOMAIN,ytimg.com, Proxy   
-DOMAIN,twimg.com, Proxy   
-DOMAIN,youtu.be, Proxy   
-DOMAIN,doubleclick.net, Proxy   
-DOMAIN,t.co, Proxy   
-DOMAIN,twitter.com, Proxy   
-DOMAIN,github.com, Proxy   
-DOMAIN,blogspot.com, Proxy   
-DOMAIN,blogger.com, Proxy   
-DOMAIN,ggpht.com, Proxy   
-DOMAIN,facebook.com, Proxy   
-DOMAIN,fbcdn.net, Proxy   
-DOMAIN,googlesource.com, Proxy   
-DOMAIN,tumblr.com, Proxy   
-DOMAIN,instagram.com, Proxy   
-DOMAIN,fb.me, Proxy   
-DOMAIN,goo.gl, Proxy   
-DOMAIN,gvt1.com, Proxy   
-DOMAIN,local, Proxy   
-DOMAIN,ir, Proxy 
-
-DOMAIN-KEYWORD,google.com, Proxy   
-DOMAIN-KEYWORD,gstatic.com, Proxy   
-DOMAIN-KEYWORD,google.com.hk, Proxy   
-DOMAIN-KEYWORD,gmail.com, Proxy   
-DOMAIN-KEYWORD,googledrive.com, Proxy   
-DOMAIN-KEYWORD,googleusercontent.com, Proxy   
-DOMAIN-KEYWORD,android.com, Proxy   
-DOMAIN-KEYWORD,googleapis.com, Proxy   
-DOMAIN-KEYWORD,googlevideo.com, Proxy   
-DOMAIN-KEYWORD,googlesyndication.com, Proxy   
-DOMAIN-KEYWORD,wikipedia.org, Proxy   
-DOMAIN-KEYWORD,wikimedia.org, Proxy   
-DOMAIN-KEYWORD,youtube.com, Proxy   
-DOMAIN-KEYWORD,ytimg.com, Proxy   
-DOMAIN-KEYWORD,twimg.com, Proxy   
-DOMAIN-KEYWORD,youtu.be, Proxy   
-DOMAIN-KEYWORD,doubleclick.net, Proxy   
-DOMAIN-KEYWORD,t.co, Proxy   
-DOMAIN-KEYWORD,twitter.com, Proxy   
-DOMAIN-KEYWORD,github.com, Proxy   
-DOMAIN-KEYWORD,blogspot.com, Proxy   
-DOMAIN-KEYWORD,blogger.com, Proxy   
-DOMAIN-KEYWORD,ggpht.com, Proxy   
-DOMAIN-KEYWORD,facebook.com, Proxy   
-DOMAIN-KEYWORD,fbcdn.net, Proxy   
-DOMAIN-KEYWORD,googlesource.com, Proxy   
-DOMAIN-KEYWORD,tumblr.com, Proxy   
-DOMAIN-KEYWORD,instagram.com, Proxy   
-DOMAIN-KEYWORD,fb.me, Proxy   
-DOMAIN-KEYWORD,goo.gl, Proxy   
-DOMAIN-KEYWORD,gvt1.com, Proxy   
-DOMAIN-KEYWORD,local, Proxy   
-DOMAIN-KEYWORD,ir, Proxy 
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,127.0.0.1/8,DIRECT
+IP-CIDR,100.64.0.0/10,DIRECT
+IP-CIDR6,::1/128,DIRECT
+IP-CIDR6,fc00::/7,DIRECT
+IP-CIDR6,fe80::/10,DIRECT
+IP-CIDR6,fd00::/8,DIRECT
 
 DOMAIN-SUFFIX,google.com, Proxy   
 DOMAIN-SUFFIX,gstatic.com, Proxy   
@@ -121,14 +53,23 @@ DOMAIN-SUFFIX,facebook.com, Proxy
 DOMAIN-SUFFIX,fbcdn.net, Proxy   
 DOMAIN-SUFFIX,googlesource.com, Proxy   
 DOMAIN-SUFFIX,tumblr.com, Proxy   
-DOMAIN-SUFFIX,instagram.com, Proxy   
-DOMAIN-SUFFIX,fb.me, Proxy   
-DOMAIN-SUFFIX,goo.gl, Proxy   
-DOMAIN-SUFFIX,gvt1.com, Proxy   
-DOMAIN-SUFFIX,local, Proxy   
-DOMAIN-SUFFIX,ir, Proxy   
+DOMAIN-SUFFIX,instagram.com,Proxy   
+DOMAIN-SUFFIX,fb.me,Proxy   
+DOMAIN-SUFFIX,goo.gl,Proxy   
+DOMAIN-SUFFIX,gvt1.com,Proxy
+DOMAIN-SUFFIX,local,Proxy
 
-GEOIP,IR, Proxy   
+#DIRECT list
+DOMAIN-SUFFIX,ir,DIRECT
+DOMAIN-SUFFIX,liran.ir,DIRECT
+
+Final,DIRECT
+
+#Blok list
+DOMAIN-SUFFIX,geosite.category.ads.all,REJECT
+DOMAIN-SUFFIX,appcenter.ms,REJECT
+DOMAIN-SUFFIX,app.measurement.com,REJECT
+
 
 [Host]
 1006-shadow.igamecj.com = 43.130.67.186
