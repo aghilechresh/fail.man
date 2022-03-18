@@ -36,49 +36,49 @@ url-test = http://connectivitycheck.gstatic.com/generate_204
 interval = 300
 
 [Proxy]
-TurkeyGaming = Shadowsocks,141.98.119.180,50003,aes-256-cfb, 8460400130, http://connectivitycheck.gstatic.com/generate_204
-TurkeyGamin = Shadowsocks,185.219.134.52,50003,aes-256-cfb, 8460400130, http://connectivitycheck.gstatic.com/generate_204
-Germany = shadowsocks, 37.1.192.129,55605,aes-256-cfb, ruEvBSp, http://connectivitycheck.gstatic.com/generate_204
-German = Shadowsocks, 172.105.244.165,2376,aes-256-gcm, faBAoD54k87UJG7, http://connectivitycheck.gstatic.com/generate_204
-Netherlands = Shadowsocks, 51.15.0.113,989,aes-256-gcm, f8f7aCzcPKbsF8p3, http://connectivitycheck.gstatic.com/generate_204
-Romania = Shadowsocks, 185.225.19.64,50003,aes-256-gcm, 8460400130, http://connectivitycheck.gstatic.com/generate_204
+TurkeyGaming = Shadowsocks,141.98.119.180,50003,aes-256-cfb, 8460400130, https://github.com/ConnersHua/SSEncrypt/raw/master/SSEncrypt.module
+TurkeyGamin = Shadowsocks,185.219.134.52,50003,aes-256-cfb, 8460400130, https://github.com/ConnersHua/SSEncrypt/raw/master/SSEncrypt.module
+Germany = shadowsocks, 37.1.192.129,55605,aes-256-cfb, ruEvBSp, https://github.com/ConnersHua/SSEncrypt/raw/master/SSEncrypt.module
+German = Shadowsocks, 172.105.244.165,2376,aes-256-cfb, faBAoD54k87UJG7, https://github.com/ConnersHua/SSEncrypt/raw/master/SSEncrypt.module
+Netherlands = Shadowsocks, 51.15.0.113,989,aes-256-cfb, f8f7aCzcPKbsF8p3, https://github.com/ConnersHua/SSEncrypt/raw/master/SSEncrypt.module
+Romania = Shadowsocks, 185.225.19.64,50003,aes-256-cfb, 8460400130, https://github.com/ConnersHua/SSEncrypt/raw/master/SSEncrypt.module
 
 [Proxy Group]
 Proxy = select, TurkeyGaming, TurkeyGamin, Germany, German, Netherlands, Romania
 
 [Rule]
-DOMAIN-SUFFIX,google.com, Proxy   
-DOMAIN-SUFFIX,gstatic.com, Proxy   
-DOMAIN-SUFFIX,google.com.hk, Proxy   
-DOMAIN-SUFFIX,gmail.com, Proxy   
-DOMAIN-SUFFIX,googledrive.com, Proxy   
-DOMAIN-SUFFIX,googleusercontent.com, Proxy   
-DOMAIN-SUFFIX,android.com, Proxy   
-DOMAIN-SUFFIX,googleapis.com, Proxy   
-DOMAIN-SUFFIX,googlevideo.com, Proxy   
-DOMAIN-SUFFIX,googlesyndication.com, Proxy   
-DOMAIN-SUFFIX,wikipedia.org, Proxy   
-DOMAIN-SUFFIX,wikimedia.org, Proxy   
-DOMAIN-SUFFIX,youtube.com, Proxy   
-DOMAIN-SUFFIX,ytimg.com, Proxy   
-DOMAIN-SUFFIX,twimg.com, Proxy   
-DOMAIN-SUFFIX,youtu.be, Proxy   
-DOMAIN-SUFFIX,doubleclick.net, Proxy   
-DOMAIN-SUFFIX,t.co, Proxy   
-DOMAIN-SUFFIX,twitter.com, Proxy   
-DOMAIN-SUFFIX,github.com, Proxy   
-DOMAIN-SUFFIX,blogspot.com, Proxy   
-DOMAIN-SUFFIX,blogger.com, Proxy   
-DOMAIN-SUFFIX,ggpht.com, Proxy   
-DOMAIN-SUFFIX,facebook.com, Proxy   
-DOMAIN-SUFFIX,fbcdn.net, Proxy   
-DOMAIN-SUFFIX,googlesource.com, Proxy   
-DOMAIN-SUFFIX,tumblr.com, Proxy   
-DOMAIN-SUFFIX,instagram.com, Proxy   
-DOMAIN-SUFFIX,fb.me, Proxy   
-DOMAIN-SUFFIX,goo.gl, Proxy   
-DOMAIN-SUFFIX,gvt1.com, Proxy   
-DOMAIN-SUFFIX,local, Proxy
+DOMAIN-SUFFIX,google.com, Romania   
+DOMAIN-SUFFIX,gstatic.com, Romania   
+DOMAIN-SUFFIX,google.com.hk, Romania   
+DOMAIN-SUFFIX,gmail.com, Romania   
+DOMAIN-SUFFIX,googledrive.com, Romania   
+DOMAIN-SUFFIX,googleusercontent.com, Romania   
+DOMAIN-SUFFIX,android.com, Romania   
+DOMAIN-SUFFIX,googleapis.com, Romania   
+DOMAIN-SUFFIX,googlevideo.com, Romania   
+DOMAIN-SUFFIX,googlesyndication.com, Romania   
+DOMAIN-SUFFIX,wikipedia.org, Romania   
+DOMAIN-SUFFIX,wikimedia.org, Romania   
+DOMAIN-SUFFIX,youtube.com, Romania   
+DOMAIN-SUFFIX,ytimg.com, Romania   
+DOMAIN-SUFFIX,twimg.com, Romania   
+DOMAIN-SUFFIX,youtu.be, Romania   
+DOMAIN-SUFFIX,doubleclick.net, Romania   
+DOMAIN-SUFFIX,t.co, Romania   
+DOMAIN-SUFFIX,twitter.com, Romania   
+DOMAIN-SUFFIX,github.com, Romania   
+DOMAIN-SUFFIX,blogspot.com, Romania   
+DOMAIN-SUFFIX,blogger.com, Romania   
+DOMAIN-SUFFIX,ggpht.com, Romania   
+DOMAIN-SUFFIX,facebook.com, Romania   
+DOMAIN-SUFFIX,fbcdn.net, Romania   
+DOMAIN-SUFFIX,googlesource.com, Romania   
+DOMAIN-SUFFIX,tumblr.com, Romania   
+DOMAIN-SUFFIX,instagram.com, Romania   
+DOMAIN-SUFFIX,fb.me, Romania   
+DOMAIN-SUFFIX,goo.gl, Romania   
+DOMAIN-SUFFIX,gvt1.com, Romania   
+DOMAIN-SUFFIX,local, Romania
 
 #DOMAIN,,REJECT
 DOMAIN-SUFFIX,geosite:category-ads-all,REJECT
@@ -95,7 +95,8 @@ IP-CIDR6,fe80::/10,DIRECT
 IP-CIDR6,fd00::/8,DIRECT
 
 DOMAIN,ir,DIRECT
-DOMAIN-SUFFIX,ir,DIRECT 
+DOMAIN-SUFFIX,ir,DIRECT  
+GEOIP,GB,NL,FR,KN,UA,Romania
 GEOIP,IR,DIRECT
 
 Final,DIRECT
