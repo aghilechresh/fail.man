@@ -1,0 +1,243 @@
+mode=0
+persist_config=DISABLED
+persist_mode=1
+show_ciphers=DISABLED
+show_digests=DISABLED
+show_engines=DISABLED
+genkey=DISABLED
+key_pass_file='[UNDEF]'
+show_tls_ciphers=DISABLED
+connect_retry_max=0
+Connection profiles [0]:
+proto=udp
+local='[UNDEF]'
+local_port='[UNDEF]'
+remote='185.216.33.90'
+remote_port='11194'
+remote_float=DISABLED
+bind_defined=DISABLED
+bind_local=DISABLED
+bind_ipv6_only=DISABLED
+connect_retry_seconds=2
+connect_timeout=120
+xormethod=0
+xormask=''
+xormasklen=0
+socks_proxy_server='[UNDEF]'
+socks_proxy_port='[UNDEF]'
+tun_mtu=1500
+tun_mtu_defined=ENABLED
+link_mtu=1500
+link_mtu_defined=DISABLED
+tun_mtu_extra=0
+tun_mtu_extra_defined=DISABLED
+mtu_discover_type=-1
+fragment=0
+mssfix=1450
+explicit_exit_notification=1
+Connection profiles END
+remote_random=DISABLED
+ipchange='[UNDEF]'
+dev='tun'
+dev_type='[UNDEF]'
+dev_node='[UNDEF]'
+lladdr='[UNDEF]'
+topology=1
+ifconfig_local='[UNDEF]'
+ifconfig_remote_netmask='[UNDEF]'
+ifconfig_noexec=DISABLED
+ifconfig_nowarn=DISABLED
+ifconfig_ipv6_local='[UNDEF]'
+ifconfig_ipv6_netbits=0
+ifconfig_ipv6_remote='[UNDEF]'
+shaper=0
+mtu_test=0
+mlock=DISABLED
+keepalive_ping=0
+keepalive_timeout=0
+inactivity_timeout=0
+ping_send_timeout=0
+ping_rec_timeout=0
+ping_rec_timeout_action=0
+ping_timer_remote=DISABLED
+remap_sigusr1=0
+persist_tun=DISABLED
+persist_local_ip=DISABLED
+persist_remote_ip=DISABLED
+persist_key=DISABLED
+passtos=DISABLED
+resolve_retry_seconds=1000000000
+resolve_in_advance=DISABLED
+username='[UNDEF]'
+groupname='[UNDEF]'
+chroot_dir='[UNDEF]'
+cd_dir='[UNDEF]'
+writepid='[UNDEF]'
+up_script='[UNDEF]'
+down_script='[UNDEF]'
+down_pre=DISABLED
+up_restart=DISABLED
+up_delay=DISABLED
+daemon=DISABLED
+inetd=0
+log=DISABLED
+suppress_timestamps=ENABLED
+machine_readable_output=DISABLED
+nice=0
+verbosity=4
+mute=0
+gremlin=0
+status_file='[UNDEF]'
+status_file_version=1
+status_file_update_freq=60
+occ=ENABLED
+rcvbuf=0
+sndbuf=0
+sockflags=0
+fast_io=DISABLED
+comp.alg=0
+comp.flags=0
+route_script='[UNDEF]'
+route_default_gateway='[UNDEF]'
+route_default_metric=0
+route_noexec=DISABLED
+route_delay=0
+route_delay_window=30
+route_delay_defined=DISABLED
+route_nopull=DISABLED
+route_gateway_via_dhcp=DISABLED
+allow_pull_fqdn=DISABLED
+shared_secret_file='[UNDEF]'
+key_direction=not set
+ciphername='AES-128-GCM'
+ncp_enabled=ENABLED
+ncp_ciphers='AES-256-GCM:AES-128-GCM'
+authname='SHA256'
+prng_hash='SHA1'
+prng_nonce_secret_len=16
+keysize=0
+engine=DISABLED
+replay=ENABLED
+mute_replay_warnings=DISABLED
+replay_window=64
+replay_time=15
+packet_id_file='[UNDEF]'
+use_iv=ENABLED
+test_crypto=DISABLED
+tls_server=DISABLED
+tls_client=ENABLED
+key_method=2
+ca_file='[[INLINE]]'
+ca_path='[UNDEF]'
+dh_file='[UNDEF]'
+cert_file='[[INLINE]]'
+extra_certs_file='[UNDEF]'
+priv_key_file='[[INLINE]]'
+pkcs12_file='[UNDEF]'
+cipher_list='TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256'
+cipher_list_tls13='[UNDEF]'
+tls_cert_profile='[UNDEF]'
+tls_verify='[UNDEF]'
+tls_export_cert='[UNDEF]'
+verify_x509_type=2
+verify_x509_name='server_ebxHnQ0pcNXNPAHB'
+crl_file='[UNDEF]'
+ns_cert_type=0
+remote_cert_ku[i]=65535
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_ku[i]=0
+remote_cert_eku='TLS Web Server Authentication'
+ssl_flags=192
+tls_timeout=2
+renegotiate_bytes=-1
+renegotiate_packets=0
+renegotiate_seconds=3600
+handshake_window=60
+transition_window=3600
+single_session=DISABLED
+push_peer_info=DISABLED
+tls_exit=DISABLED
+tls_auth_file='[UNDEF]'
+tls_crypt_file='[[INLINE]]'
+client=ENABLED
+pull=ENABLED
+auth_user_pass_file='[UNDEF]'
+OpenVPN 2.4.9 android-armeabi-v7a [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Mar 16 2022
+library versions: OpenSSL 1.1.1n  15 Mar 2022, LZO 2.10
+Outgoing Control Channel Encryption: Cipher 'AES-256-CTR' initialized with 256 bit key
+Outgoing Control Channel Encryption: Using 256 bit message hash 'SHA256' for HMAC authentication
+Incoming Control Channel Encryption: Cipher 'AES-256-CTR' initialized with 256 bit key
+Incoming Control Channel Encryption: Using 256 bit message hash 'SHA256' for HMAC authentication
+Control Channel MTU parms [ L:1621 D:1156 EF:94 EB:0 ET:0 EL:3 ]
+Data Channel MTU parms [ L:1621 D:1450 EF:121 EB:406 ET:0 EL:3 ]
+Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1549,tun-mtu 1500,proto UDPv4,cipher AES-128-GCM,auth [null-digest],keysize 128,key-method 2,tls-client'
+Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1549,tun-mtu 1500,proto UDPv4,cipher AES-128-GCM,auth [null-digest],keysize 128,key-method 2,tls-server'
+TCP/UDP: Preserving recently used remote address: [AF_INET]185.216.33.90:11194
+Socket Buffers: R=[229376->229376] S=[229376->229376]
+UDPv4 link local: (not bound)
+UDPv4 link remote: [AF_INET]185.216.33.90:11194
+TLS: Initial packet from [AF_INET]185.216.33.90:11194, sid=d43f61e1 f59600e5
+VERIFY OK: depth=1, CN=cn_bAboD9JOthcIoDYV
+VERIFY KU OK
+Validating certificate extended key usage
+++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+VERIFY EKU OK
+VERIFY X509NAME OK: CN=server_ebxHnQ0pcNXNPAHB
+VERIFY OK: depth=0, CN=server_ebxHnQ0pcNXNPAHB
+TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity)
+TLS Error: TLS handshake failed
+TCP/UDP: Closing socket
+SIGUSR1[soft,tls-error] received, process restarting
+Restart pause, 2 second(s)
+Outgoing Control Channel Encryption: Cipher 'AES-256-CTR' initialized with 256 bit key
+Outgoing Control Channel Encryption: Using 256 bit message hash 'SHA256' for HMAC authentication
+Incoming Control Channel Encryption: Cipher 'AES-256-CTR' initialized with 256 bit key
+Incoming Control Channel Encryption: Using 256 bit message hash 'SHA256' for HMAC authentication
+Control Channel MTU parms [ L:1621 D:1156 EF:94 EB:0 ET:0 EL:3 ]
+Data Channel MTU parms [ L:1621 D:1450 EF:121 EB:406 ET:0 EL:3 ]
+Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1549,tun-mtu 1500,proto UDPv4,cipher AES-128-GCM,auth [null-digest],keysize 128,key-method 2,tls-client'
+Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1549,tun-mtu 1500,proto UDPv4,cipher AES-128-GCM,auth [null-digest],keysize 128,key-method 2,tls-server'
+TCP/UDP: Preserving recently used remote address: [AF_INET]185.216.33.90:11194
+Socket Buffers: R=[229376->229376] S=[229376->229376]
+UDPv4 link local: (not bound)
+UDPv4 link remote: [AF_INET]185.216.33.90:11194
+TLS: Initial packet from [AF_INET]185.216.33.90:11194, sid=0bff3bdf 0ed19dae
+VERIFY OK: depth=1, CN=cn_bAboD9JOthcIoDYV
+VERIFY KU OK
+Validating certificate extended key usage
+++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+VERIFY EKU OK
+VERIFY X509NAME OK: CN=server_ebxHnQ0pcNXNPAHB
+VERIFY OK: depth=0, CN=server_ebxHnQ0pcNXNPAHB
+PID_ERR replay-window backtrack occurred [1] [TLS_WRAP-0] [0_346677] 1650614670:8 1650614670:7 t=1650614677[0] r=[0,64,15,1,1] sl=[56,8,64,272]
+TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity)
+TLS Error: TLS handshake failed
+TCP/UDP: Closing socket
+SIGUSR1[soft,tls-error] received, process restarting
+Restart pause, 2 second(s)
+Outgoing Control Channel Encryption: Cipher 'AES-256-CTR' initialized with 256 bit key
+Outgoing Control Channel Encryption: Using 256 bit message hash 'SHA256' for HMAC authentication
+Incoming Control Channel Encryption: Cipher 'AES-256-CTR' initialized with 256 bit key
+Incoming Control Channel Encryption: Using 256 bit message hash 'SHA256' for HMAC authentication
+Control Channel MTU parms [ L:1621 D:1156 EF:94 EB:0 ET:0 EL:3 ]
+Data Channel MTU parms [ L:1621 D:1450 EF:121 EB:406 ET:0 EL:3 ]
+Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1549,tun-mtu 1500,proto UDPv4,cipher AES-128-GCM,auth [null-digest],keysize 128,key-method 2,tls-client'
+Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1549,tun-mtu 1500,proto UDPv4,cipher AES-128-GCM,auth [null-digest],keysize 128,key-method 2,tls-server'
+TCP/UDP: Preserving recently used remote address: [AF_INET]185.216.33.90:11194
+Socket Buffers: R=[229376->229376] S=[229376->229376]
+UDPv4 link local: (not bound)
+UDPv4 link remote: [AF_INET]185.216.33.90:11194
+TLS: Initial packet from [AF_INET]185.216.33.90:11194, sid=5a7d3248 259aba2f
