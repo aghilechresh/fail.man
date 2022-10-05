@@ -4,9 +4,9 @@
       "domain:googleapis.cn": "googleapis.com"
     },
     "servers": [
-      "9.9.9.10",
+      "223.5.5.5",
       {
-        "address": "223.5.5.5",
+        "address": "10.255.255.254",
         "domains": [
           "geosite:cn"
         ],
@@ -59,14 +59,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.163.157.147",
+            "address": "46.29.218.84",
             "port": 443,
             "users": [
               {
                 "alterId": 64,
                 "encryption": "auto",
                 "flow": "",
-                "id": "b8aedf50-c4f5-4255-b73d-3779db661d70",
+                "id": "f7a456da-9886-4dd7-b193-4c59a726219c",
                 "level": 8,
                 "security": "auto"
               }
@@ -124,7 +124,7 @@
     "rules": [
       {
         "ip": [
-          "9.9.9.10"
+          "223.5.5.5"
         ],
         "outboundTag": "proxy",
         "port": "53",
@@ -132,7 +132,7 @@
       },
       {
         "ip": [
-          "223.5.5.5"
+          "10.255.255.254"
         ],
         "outboundTag": "direct",
         "port": "53",
