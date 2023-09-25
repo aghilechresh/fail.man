@@ -7,7 +7,7 @@
 {
     "log": {
         "disabled": false,
-        "level": "fatal",
+        "level": "debug",
         "timestamp": true
     },
     "experimental": {
@@ -25,13 +25,13 @@
     "dns": {
         "servers": [
             {
-                "address": "https:\/\/dns.bitdefender.net\/dns-query",
+                "address": "https:\/\/8.8.8.8\/dns-query",
                 "address_resolver": "dns-direct",
                 "strategy": "ipv4_only",
                 "tag": "dns-remote"
             },
             {
-                "address": "https:\/\/dns.bitdefender.net\/dns-query",
+                "address": "https:\/\/149.112.112.112\/dns-query",
                 "address_resolver": "dns-local",
                 "detour": "direct",
                 "strategy": "ipv4_only",
