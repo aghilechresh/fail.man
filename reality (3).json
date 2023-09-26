@@ -83,7 +83,7 @@
       "tag": "tun-in",
       "domain_strategy": "",
       "interface_name": "tun1",
-      "inet4_address": "192.168.1.0/32",
+      "inet4_address": "192.168.1.0/23",
       "mtu": 9000,
       "auto_route": true,
       "strict_route": true,
