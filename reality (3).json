@@ -8,7 +8,7 @@
     "clash_api": {
       "external_controller": "0.0.0.0:9090",
       "external_ui": "yacd",
-      "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+      "external_ui_download_url": "https:\/\/github.com\/MetaCubeX\/Yacd-meta\/archive\/gh-pages.zip",
       "external_ui_download_detour": "direct",
       "secret": "",
       "default_mode": "rule",
@@ -19,13 +19,13 @@
   "dns": {
     "servers": [
       {
-        "address": "tcp://1.1.1.1:53",
+        "address": "tcp:\/\/1.1.1.1:53",
         "address_resolver": "dns-direct",
         "strategy": "ipv4_only",
         "tag": "dns-remote"
       },
       {
-        "address": "tcp://8.8.8.8:53",
+        "address": "tcp:\/\/8.8.8.8:53",
         "address_resolver": "dns-local",
         "detour": "direct",
         "strategy": "ipv4_only",
@@ -37,7 +37,7 @@
         "tag": "dns-local"
       },
       {
-        "address": "rcode://success",
+        "address": "rcode:\/\/success",
         "tag": "dns-block"
       }
     ],
@@ -50,7 +50,7 @@
       },
       {
         "domain_suffix": [
-          "irancell"
+          "app"
         ],
         "server": "dns-direct"
       },
@@ -83,12 +83,12 @@
       "tag": "tun-in",
       "domain_strategy": "",
       "interface_name": "tun0",
-      "inet4_address": "192.168.0.1/16",
+      "inet4_address": "192.168.0.1\/16",
       "mtu": 9000,
       "auto_route": true,
       "strict_route": true,
       "stack": "system",
-      "endpoint_independent_nat": true,
+      "endpoint_independent_nat": false,
       "sniff": true,
       "sniff_override_destination": false
     },
@@ -97,7 +97,7 @@
       "listen": "0.0.0.0",
       "listen_port": 2080,
       "sniff": true,
-      "sniff_override_destination": true,
+      "sniff_override_destination": false,
       "tag": "mixed-in",
       "type": "mixed"
     }
