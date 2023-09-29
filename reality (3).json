@@ -19,13 +19,13 @@
   "dns": {
     "servers": [
       {
-        "address": "tcp:\/\/1.1.1.1:53",
+        "address": "1.1.1.1",
         "address_resolver": "dns-direct",
         "strategy": "ipv4_only",
         "tag": "dns-remote"
       },
       {
-        "address": "tcp:\/\/8.8.8.8:53",
+        "address": "8.8.8.8",
         "address_resolver": "dns-local",
         "detour": "direct",
         "strategy": "ipv4_only",
@@ -83,12 +83,12 @@
       "tag": "tun-in",
       "domain_strategy": "",
       "interface_name": "tun0",
-      "inet4_address": "192.168.0.1\/16",
-      "mtu": 9000,
+      "inet4_address": "192.168.1.0\/16",
+      "mtu": 1500,
       "auto_route": true,
       "strict_route": true,
       "stack": "system",
-      "endpoint_independent_nat": false,
+      "endpoint_independent_nat": true,
       "sniff": true,
       "sniff_override_destination": false
     },
