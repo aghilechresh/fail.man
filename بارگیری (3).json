@@ -25,13 +25,13 @@
     "dns": {
         "servers": [
             {
-                "address": "https:\/\/dns.bitdefender.net\/dns-query",
+                "address": "8.8.8.8",
                 "address_resolver": "dns-direct",
                 "strategy": "ipv4_only",
                 "tag": "dns-remote"
             },
             {
-                "address": "https:\/\/dns.bitdefender.net\/dns-query",
+                "address": "10.255.255.254",
                 "address_resolver": "dns-local",
                 "detour": "direct",
                 "strategy": "ipv4_only",
@@ -82,9 +82,9 @@
             "type": "tun",
             "tag": "tun-in",
             "domain_strategy": "",
-            "interface_name": "tun0",
-            "inet4_address": "192.168.1.0\/23",
-            "mtu": 1300,
+            "interface_name": "tun1",
+            "inet4_address": "192.168.0.1/16",
+            "mtu": 1500,
             "auto_route": true,
             "strict_route": true,
             "stack": "system",
@@ -358,7 +358,7 @@
                 "رایگان | REALITY | @mahsa_amini2 | Donated | SE🇸🇪 | 1️⃣4️⃣ | 121"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "3m",
+            "interval": "10m",
             "tolerance": 50
         },
         {
